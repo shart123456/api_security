@@ -40,3 +40,54 @@ pip install aiohttp
 
 # Or install all dependencies
 pip install -r requirements.txt
+
+
+
+🧪 Examples
+1. Quick Scan
+
+Test for API spec exposure and JWT vulnerabilities:
+
+./api_security_standalone.py https://api.target.com
+
+2. Comprehensive Scan
+
+Discover APIs, test endpoints, and save results:
+
+./api_security_standalone.py https://api.target.com \
+  --test-endpoints \
+  --json-report \
+  --verbose \
+  -o ./scan-results
+
+3. Authenticated Scan
+./api_security_standalone.py https://api.target.com \
+  -H "Authorization: Bearer eyJhbGc..." \
+  --test-endpoints
+
+4. Disable JWT Testing
+./api_security_standalone.py https://api.target.com --no-jwt
+🧪 Examples
+1. Quick Scan
+
+Test for API spec exposure and JWT vulnerabilities:
+
+./api_security_standalone.py https://api.target.com
+
+2. Comprehensive Scan
+
+Discover APIs, test endpoints, and save results:
+
+./api_security_standalone.py https://api.target.com \
+  --test-endpoints \
+  --json-report \
+  --verbose \
+  -o ./scan-results
+
+3. Authenticated Scan
+./api_security_standalone.py https://api.target.com \
+  -H "Authorization: Bearer eyJhbGc..." \
+  --test-endpoints
+
+4. Disable JWT Testing
+./api_security_standalone.py https://api.target.com --no-jwt
