@@ -1,7 +1,5 @@
 #  API Security Standalone Tool
 
-A **standalone Python script** that performs comprehensive API security testing — extracted from **BBOT's `api_security` module**.
-
 ---
 
 ## Features
